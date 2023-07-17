@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
     "start": "tsc --build && node lib/index.js",
     "build": "tsc --build"
   },
@@ -19,8 +19,10 @@
   },
   "devDependencies": {
     "@types/dotenv-safe": "^8.1.2",
+    "@types/jest": "^29.5.3",
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   }
 }

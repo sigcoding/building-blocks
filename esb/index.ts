@@ -16,7 +16,7 @@ const targetEmail: string = "igorducca@gmail.com";
       from: `${originName} <${originEmail}>`,
       to: [targetEmail],
       subject: "Hello World",
-      react: EmailTemplate({ targetEmail }),
+      react: EmailTemplate(),
     });
 
     console.log(data);
