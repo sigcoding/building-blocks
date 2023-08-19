@@ -14,7 +14,7 @@ const run = async () => {
     messages: [
       {
         role: "user",
-        content: "hey! how are you?",
+        content: "oi, quem é você?",
       },
     ],
   });

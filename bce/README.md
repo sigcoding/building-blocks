@@ -9,7 +9,7 @@ To configure BCE, you need to login with your Google account at [Google Bard](ht
 ```js
 document.cookie
   .split(" ")
-  .filter((p) => p.trim().startsWith("__Secure-1PAPISID"))[0]
+  .filter((p) => p.trim().startsWith("__Secure-1PSID"))[0]
   .split("=")[1]
   .replace(";", "");
 ```

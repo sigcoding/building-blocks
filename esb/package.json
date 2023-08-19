@@ -6,7 +6,8 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
     "start": "tsc --build && node lib/index.js",
-    "build": "tsc --build"
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "lint": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",
     "ts-jest": "^29.1.1",
+    "tsup": "^7.2.0",
     "typescript": "^5.1.6"
   }
 }
