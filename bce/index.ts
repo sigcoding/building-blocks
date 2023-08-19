@@ -9,7 +9,7 @@ const run = async () => {
 
   await Bard.init(process.env.BARD_COOKIE_KEY as string);
 
-  const response = await Bard.askAI("hey, who are you?");
+  const response = await Bard.askAI("oi, quem é você?");
 
   console.log(response);
 };
